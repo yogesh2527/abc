@@ -1,0 +1,8 @@
+
+
+<h2>Ng Style</h2>
+
+<ul *ngFor="let s of country ">
+<li [ngStyle]="{'color':getcolor(s.Name)}">{{s.Name}}-{{s.Language}}</li>
+
+</ul>

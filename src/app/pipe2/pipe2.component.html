@@ -1,0 +1,49 @@
+
+
+<h2> Pipe Example </h2>
+
+<table border="4" width="400" height="400">
+<tr>
+
+    <th>Id</th>
+    <th>Name</th>
+    <th>Subject</th>
+    <th>Marks</th>
+</tr>
+
+<tr *ngFor="let s of student">
+    <td>{{s.id }}</td>
+    <td>{{s.name | titlecase}}</td>
+    <td>{{s.Subject | uppercase}}</td>
+    <td>{{s.Marks}}</td>
+</tr>
+
+
+
+</table>
+Time => {{dob|date:"medium"}}<br>
+
+specific date => {{dob|date:"dd/mm/yyyy"}}
+<br>
+Medium Time => {{dob|date:"mediumTime"}}
+<br>
+salary => {{salary|currency:"USD"}}
+<br>
+salary => {{salary|currency:"INR"}}
+
+<h2>Slice Example</h2>
+Original String => {{name}}<br>
+Slicee => {{name|slice:2}}<br>
+Slicee => {{name|slice:2:6}}<br>
+
+<h1>Current Date</h1>
+
+Current Date => {{crdate}}<br>
+Current Date  Short Formate=> {{crdate |date:"shortDate"}}<br>
+Current Date Long Formate=> {{crdate|date:"longDate"}}<br>
+Current Date Date => {{crdate|date:"date"}}<br>
+
+<h1>Percantage</h1>
+myNumber => {{mynum}}<br>
+Percantage => {{mynum|percent}}<br>
+Percantage => {{mynum|percent:'2.4-8'}}<br>

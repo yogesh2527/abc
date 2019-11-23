@@ -1,0 +1,39 @@
+
+
+<h2>Ng-Class</h2>
+
+
+<p [ngClass]="['one']">sdfsdjkfksdkfsdklflksd fksdfl</p>
+
+<div *ngFor="let s of arr" [ngClass]="'one'">
+
+    {{s}}
+
+
+
+</div>
+
+Name : <h2 [innerHTML]='name'></h2>
+
+
+<table [attr.border]="bdr" height="400" width="500">
+
+   
+        <thead><tr>
+            <td [attr.colspan]="col">Students</td>
+            
+        </tr> </thead>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>Mobile No</td>
+                <td>Subjects</td>
+                <td>Marks</td>
+            </tr>
+        </tbody>
+   
+
+
+</table>
+<button  class="btn btn-success" (click)="add()" >Adds</button>
+<button class="btn btn-danger" (click)="show()">Show</button>
